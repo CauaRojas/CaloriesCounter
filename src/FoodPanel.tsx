@@ -6,7 +6,11 @@ export default function FoodPanel() {
 	const loopFoods = () => {
 		const randomFoods = foods.sort(() => Math.random() - 0.5);
 		const foodList = randomFoods.map((food, index) => {
-			return <li key={index}>{food.Display_Name}</li>;
+			return (
+				<li key={index}>
+					{food.Display_Name} - {parseFloat(food.Calories).toFixed(2)}
+				</li>
+			);
 		});
 		foodList.splice(15, foodList.length);
 		return foodList;
