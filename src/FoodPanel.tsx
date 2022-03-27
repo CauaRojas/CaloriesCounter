@@ -10,6 +10,7 @@ export default function FoodPanel() {
 		foodList.splice(15, foodList.length);
 		return foodList;
 	};
+
 	return (
 		<div className='food-panel'>
 			<header>
