@@ -1,4 +1,5 @@
 import foods from './foods';
+import './FoodPanel.css';
 
 export default function FoodPanel() {
 	// Create a function that returns 15 li with random food names
@@ -14,7 +15,7 @@ export default function FoodPanel() {
 	return (
 		<div className='food-panel'>
 			<header>
-				<h1>Food Panel</h1>
+				<h1>Foods</h1>
 			</header>
 			<article>
 				<ul>{loopFoods()}</ul>
