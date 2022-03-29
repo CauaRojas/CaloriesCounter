@@ -1,4 +1,4 @@
-import foods from './foods';
+import foods from '../foods';
 import './FoodPanel.css';
 
 export default function FoodPanel() {
